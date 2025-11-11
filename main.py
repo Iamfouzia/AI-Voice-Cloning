@@ -2,7 +2,6 @@
 
 
 # import os
-
 # # Set model paths (must be before importing TTS)
 # os.environ["TTS_MODEL_PATH"] = "E:\\TTS\\models"
 # os.environ["TTS_VC_MODEL_PATH"] = "E:\\TTS\\models\\voice_conversion_models"
@@ -31,14 +30,6 @@
 # speaker = "female-en-5"
 # language = "en"
 
-# tts.tts_with_vc_to_file(
-#     text=text,
-#     speaker_wav=speaker_wav,
-#     speaker=speaker,
-#     language=language,
-#     file_path=output_path
-# )
-
 # print("Voice cloned successfully! File saved as:", output_path)
 
 
@@ -46,25 +37,3 @@
 
 
 
-# import os
-# from TTS.api import TTS
-
-# print("loading Models..")
-# tts = TTS(model_name="tts_models/multilingual/multi-dataset/your_tts", progress_bar=False,gpu=False)
-
-# reference_audio ='cv.wav'
-
-# if not os.path.exists(reference_audio):
-#  print("audio not found")  
-#  exit()
- 
-#  user_text = input("\nEnter your text for clone") 
-#  clone_audio = "output.wav"
- 
-#  tts.tts_to_file(
-#      text=user_text,
-#      speaker_wav=reference_audio,
-#      file_path=clone_audio,
-#      language='en'
-#  )
-#  print("\nYour Text Clone Computer")
