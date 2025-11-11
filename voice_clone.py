@@ -11,7 +11,6 @@ if not os.path.exists(reference_audio):
     print("Audio not found!")  
     exit()
 
-# Ask user for input text
 user_text = input("\nEnter your text to clone: ") 
 clone_audio = "output.wav"
 
